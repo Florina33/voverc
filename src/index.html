@@ -6,85 +6,264 @@
   <meta name="viewport" content="width=`, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <div class="page-wrapper">
-    <nav class="main-menu">
-      <ul class="menu-list">
-        <li class="menu-item active">
-          <a href="#">Home</a>
-        </li>
-        <li class="menu-item">
-          <a href="#">Features</a>
-        </li>
-        <li class="menu-item">
-          <a href="#">Support</a>
-        </li>
-        <li class="menu-item">
-          <a href="#">Blog</a>
-        </li>
-      </ul>
-    </nav>
 
-    <div class="intro">
-      <img 
-        src="./images/logo_app.png" 
-        alt="Applicaiton logo" 
-        class="logo"
-        width="111"
-        height="86"
-      />
-      <h1 class="title">Schedule Planner</h1>
-    </div>
+    <header class="header">
+        <div class="content-wrappe flexbox">
+            <a href="#" class="logo">
+                <img src="./images/logo_voverc.png" alt="Voverc logo" width="150" height="32" />
+              </a>
+      
+              <div class="info flexbox">
+                <a href="tel:778-323-8486" class="phone">778-323-8486</a>
+                <button class="btn_chat flexbox">    
+                  <img class="icon_chat" width="40" height="38" src="./images/icon_chat.jpg" alt="">
+                  Sales chat
+                </button>
+              </div>
+        </div>    
+    </header><!-- .header-->
 
+    <main class="main-content">
+      <div class="content-wrappe">
 
-    <section class="features">
-      <ul class="features-list content-wrapper">
-        <li class="feature security">Password protection</li>
-        <li class="feature duplicate">Copy & Paste feature</li>
-        <li class="feature repeating">Repeating tasks feature</li>
-        <li class="feature customization">Customizable alerts and notifications</li>
-      </ul>
-    </section>
+              <!-- 
+              <nav class="main-menu">
+                <ul class="menu-list">
+                  <li class="menu-item active">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Features</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Support</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </nav> -->
 
+          <section class="section-choose-plan">
+
+            <div class="content-wrapper">
+                <h2>Select a plan for your trial</h2>
+                
+                <ul class="choose-plan-list flexbox">
+  
+                  <li class="item-plan">
+                    <h3>Essentials<span class="sup">tm</span></h3>
+                    <ul class="conditions-list">
+                      <li class="conditions-item">Up to 10 users</li>
+                      <li class="conditions-item">Toll-free or local number</li>
+                      <li class="conditions-item">100 toll-tree min/mo</li>
+                      <li class="conditions-item">4 people per video meeting</li>
+                    </ul>
+  
+                    <h4>Price after the trial</h4>
+  
+                    <div class="price">from $ 29,99 /user/month</div>
+                    <input type="checkbox" checked="checked">
+                    <!-- <span class="checkmark"></span> -->
+                    <a class="btn-select" href="#">Select this plan</a>
+                  </li>
+
+                  <li class="item-plan">
+                    <h3>Standard<span class="sup">tm</span></h3>
+                    <ul class="conditions-list">
+                      <li class="conditions-item">Unlimited users</li>
+                      <li class="conditions-item">Toll-free or local number</li>
+                      <li class="conditions-item">1,000 toll-tree min/mo</li>
+                      <li class="conditions-item">4 people per video meeting</li>
+                      <li class="conditions-item">Unlimited internet fax</li>
+                    </ul>
+  
+                    <h4>Price after the trial</h4>
+                    <div class="price">from $ 34,99 /user/month</div>
+                    <input type="checkbox" checked="checked">
+                    <a class="btn-select" href="#">Select this plan</a>
+                  </li>
+
+                  <li class="item-plan">
+                    <h3>Premium<span class="sup">tm</span></h3>
+                    <ul class="conditions-list">
+                      <li class="conditions-item">Unlimited users</li>
+                      <li class="conditions-item">Toll-free or local number</li>
+                      <li class="conditions-item">1,500 toll-tree min/mo</li>
+                      <li class="conditions-item">50 people per video meeting</li>
+                      <li class="conditions-item">Unlimited internet fax</li>
+                    </ul>
+  
+                    <h4>Price after the trial</h4>
+                    <div class="price">from $ 44,99 /user/month</div>
+                    <input type="checkbox" checked="checked">
+                    <a class="btn-select" href="#">Select this plan</a>
+                  </li>
+
+                  <li class="item-plan">
+                    <h3>Ultimate<span class="sup">tm</span></h3>
+                    <ul class="conditions-list">
+                      <li class="conditions-item">Unlimited users</li>
+                      <li class="conditions-item">Toll-free or local number</li>
+                      <li class="conditions-item">2,500 toll-tree min/mo</li>
+                      <li class="conditions-item">75 people per video meeting</li>
+                      <li class="conditions-item">Unlimited internet fax</li>
+                      <li class="conditions-item">Automatic call recording</li>
+                      <li class="conditions-item">Voicemail-to-text</li>
+                    </ul>
+  
+                    <h4>Price after the trial</h4>
+                    <div class="price">from $ 59,99 /user/month</div>
+                    <input type="checkbox" checked="checked">
+                    <a class="btn-select" href="#">Select this plan</a>
+                  </li>
+  
+                  
+                </ul>
+
+            </div>
+
+           
+                
+          </section>
+
+      </div>
+     
+    </main>
+    
     <footer class="footer">
       <div class="content-wrapper">
-        <div class="footer-wrapper">
-          <nav class="social-links">
-            <h2>Connect</h2>
-            <ul class="links-list">
-              <li class="link"><a class="email" href="#">Email</a></li>
-              <li class="link"><a class="twitter" href="#">Twitter</a></li>
-              <li class="link"><a class="facebook" href="#">Facebook</a></li>
-              <li class="link"><a class="linkedin" href="#">LinkedIn</a></li>
-            </ul>
-          </nav>
     
-          <form class="subscribe-form" action="#">
-            <label class="label">Subscribe to receive INTERSOG updates ceive INTERSOG updates</label>
-            <input type="email" name="email" />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-    
-        <div class="partners">
-          <h2>Our partners</h2>
-          <ul class="partners-list">
-            <li class="partner-item"><a href="#"><img src="images/combo-app.png" alt="Comboapp"></a></li>
-            <li class="partner-item"><a href="#"><img src="images/digi-117.png" alt="Digi117"></a></li>
+        <h3>A complete phone system</h3>
+
+        <div class="phone-services flexbox">
+   
+          <ul class="phone-services-list">
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_cloud.jpg" alt="">
+              <a href="#">Cloud PBX</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_folder.jpg" alt="">
+              <a href="#">Toll-free minutes per month per account</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_fax.jpg" alt="">
+              <a href="#">Unlimited internet fax</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_planet.jpg" alt="">
+              <a href="#">Global Office <span class="sup">tm</span></a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_phone.jpg" alt="">
+              <a href="#">Toll-free, local, vanity, or international numbers for voice and fax</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_four-pointed-star.jpg" alt="">
+              <a href="#">Auto attendant and dial-by-name directory</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_two-computers.jpg" alt="">
+              <a href="#">RingCentral for iOS<span class="sup">&reg;</span>, Android<span class="sup">tm</span>, Mac<span class="sup">&reg;</span>, and Windows<span class="sup">&reg;</span></a>
+            </li>
           </ul>
+
+          <ul class="phone-services-list">
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_microphone.jpg" alt="">
+              <a href="#">Audio conferencing</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_people.jpg" alt="">
+              <a href="#">Online meetings</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_people-lot.jpg" alt="">
+              <a href="#">Team collaboration</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_man-loudnessr.jpg" alt="">
+              <a href="#">Intercom</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_stack.jpg" alt="">
+              <a href="#">Shared lines</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_parking.jpg" alt="">
+              <a href="#">Call Park</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_incoming-calls.jpg" alt="">
+              <a href="#">Call queues</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_one-computer.jpg" alt="">
+              <a href="#">Paging</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_arrows-direction.jpg" alt="">
+              <a href="#">Advanced call forwarding</a>
+            </li>
+          </ul>
+
+          
+          <ul class="phone-services-list">
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_file.jpg" alt="">
+              <a href="#">Flexible answering rules</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_arrows-reversible.jpg" alt="">
+              <a href="#">Presence based on multiple devices</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_phone-connection.jpg" alt="">
+              <a href="#">Call log reports</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_mechanism.jpg" alt="">
+              <a href="#">Templates for batch configurations</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_phone-numbers.jpg" alt="">
+              <a href="#">Keep your existing phone numbers</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_clock-after.jpg" alt="">
+              <a href="#">FREE 24/7 customer support</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_clock-before.jpg" alt="">
+              <a href="#">No set up or activation fees</a>
+            </li>
+            <li class="service-item">
+              <img class="icon_chat" width="50" height="40" src="./images/icon_person-selected.jpg" alt="">
+              <a href="#">Implementation advisors, FREE when you sing up for two or more users</a>
+            </li>
+          </ul>
+       
+     
         </div>
+
+        <h4>You get everything you need. It's really that convenient.</h5>
       </div>
-      <div class="copyright">
-        <div class="content-wrapper">
-          &copy; INTERSOG 2005-2012
-        </div>
+
+      <div class="legal">
+          <a href="#">Legal</a>
       </div>
+      
     </footer>
+
+    
   </div>
 
 
