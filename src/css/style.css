@@ -462,12 +462,12 @@ img {
 	margin: 27px auto 40px auto;
 }
 
-.checkbox-round {
+.round {
 	position: relative;
 	display: inline-block;
 }
   
-.checkbox-round > label {
+.round > label {
 	position: absolute;
 	background-color: #fff;
 	height: 28px;
@@ -481,7 +481,7 @@ img {
 	cursor: pointer;
 }
 
-.checkbox-round > label::after {
+.round > label::after {
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -494,7 +494,8 @@ img {
 	opacity: 0;
 }
 
-.checkbox-round > input[type="checkbox"] {
+.round > input[type="radio"],
+.round > input[type="checkbox"] {
 	visibility: hidden;
 	width: 22px;
     height: 22px;
@@ -504,7 +505,7 @@ img {
 	opacity: 1;
 }
 
-/* .checkbox-round > input[type="checkbox"]:checked + label::after {
+/* .round > input[type="checkbox"]:checked + label::after {
 	opacity: 1;
 } */
 

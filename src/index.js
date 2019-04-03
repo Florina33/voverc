@@ -12,7 +12,7 @@ $('.tooltip').on('click', function (event) {
 });
 
 /*
-if($(".checkbox-round .checkbox").is(":checked")) {
+if($(".round .checkbox").is(":checked")) {
     alert('fsdfasd');
     $(this).parent(".wrap-checkbox").addClass("active");
 }
@@ -23,10 +23,11 @@ else {
 */
 
 
-$( ".checkbox-round input[type=checkbox]" ).on( "click", function() {
+// $( ".round input[type=checkbox]" ).on( "click", function() {
+$( ".round input[type=radio]" ).on( "click", function() {
     //onsole.log( $(this).parent(".wrap-checkbox") );
 
-    let parent = $(this).parent(".checkbox-round");
+    let parent = $(this).parent(".round");
     let parentTwo = parent.parent(".wrap-checkbox");
 
     parentTwo.toggleClass("active");
