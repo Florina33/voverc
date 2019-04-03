@@ -23,7 +23,7 @@
               <div class="info flexbox">
                 <a href="tel:778-323-8486" class="phone">778-323-8486</a>
                 <button class="btn_chat flexbox">    
-                  <img class="icon_chat" width="40" height="38" src="./images/icon_chat.jpg" alt="">
+                  <img class="icon_chat" width="40" height="34" src="./images/icon_chat.jpg" alt="">
                   Sales chat
                 </button>
               </div>
@@ -34,18 +34,34 @@
       <div class="content-wrappe">
               
           <nav class="main-menu">
-            <ul class="menu-list">
+            <ul class="menu-list flexbox">
               <li class="menu-item">
-                <a href="#">Choose number</a>
+                <span></span>
+                <a href="#" class="flexbox">
+                  <img class="icon_chat" width="48" height="38" src="./images/icon_choose.jpg" alt="">
+                  Choose number
+                </a>
               </li>
               <li class="menu-item active">
-                <a href="#">Choose plan</a>
+                <span></span>
+                <a href="#" class="flexbox">
+                  <img class="icon_chat" width="48" height="38" src="./images/icon_list.jpg" alt="">
+                  Choose plan
+                </a>
               </li>
               <li class="menu-item">
-                <a href="#">Add users</a>
+                <span></span>
+                <a href="#" class="flexbox">
+                  <img class="icon_chat" width="48" height="38" src="./images/icon_people-around.jpg" alt="">
+                  Add users
+                </a>
               </li>
               <li class="menu-item">
-                <a href="#">Checkout</a>
+                <span></span>
+                <a href="#" class="flexbox">
+                  <img class="icon_chat" width="48" height="38" src="./images/icon_check-list.jpg" alt="">
+                  Checkout
+                </a>
               </li>
             </ul>
           </nav>
@@ -53,7 +69,21 @@
           <section class="section-choose-plan">
 
             <div class="content-wrapper">
-                <h2>Select a plan for your trial</h2>
+                <h2>Select a plan for your trial
+                  <!-- <div class="btn btn-primary tooltip">
+                      <img src="./images/icon_info.jpg" width="30" height="30" alt="icon info">
+                      <div class="right">
+                          Полезная информация
+                          <i></i>
+                      </div>
+                  </div> -->
+
+                  <span class="tooltip" tooltip="Information." flow="down">
+                    <img src="./images/icon_info.jpg" width="30" height="30" alt="icon info">
+                  </span>
+                </h2>
+              
+
                 
                 <ul class="choose-plan-list flexbox wrap">
   
@@ -69,13 +99,13 @@
                       </ul>
                       <h4>Price after the trial</h4>
                       <div class="price">from <strong class="sum">$29,99</strong> /user/month</div>
-                      <div class="checkbox-wrap">
-                          <div class="round">
+                      <div class="wrap-checkbox">
+                          <div class="checkbox-round">
                             <input type="checkbox" id="checkbox" />
                             <label for="checkbox"></label>
                           </div>
+                          <a class="btn-select" href="#">Select this plan</a>
                       </div>
-                      <a class="btn-select" href="#">Select this plan</a>
                     </div>
            
                   </li>
@@ -93,13 +123,13 @@
                       </ul>
                       <h4>Price after the trial</h4>
                       <div class="price">from <strong class="sum">$34,99</strong> /user/month</div>
-                      <div class="checkbox-wrap">
-                          <div class="round">
+                      <div class="wrap-checkbox">
+                          <div class="checkbox-round">
                             <input type="checkbox" id="checkbox" />
                             <label for="checkbox"></label>
                           </div>
+                          <a class="btn-select" href="#">Select this plan</a>
                       </div>
-                      <a class="btn-select" href="#">Select this plan</a>
                     </div>
 
                   </li>
@@ -118,13 +148,13 @@
                       </ul>
                       <h4>Price after the trial</h4>
                       <div class="price">from <strong class="sum">$44,99</strong> /user/month</div>
-                      <div class="checkbox-wrap">
-                          <div class="round">
+                      <div class="wrap-checkbox">
+                          <div class="checkbox-round">
                             <input type="checkbox" id="checkbox" />
                             <label for="checkbox"></label>
                           </div>
+                          <a class="btn-select" href="#">Select this plan</a>
                       </div>
-                      <a class="btn-select" href="#">Select this plan</a>
                     </div>
              
                   </li>
@@ -144,13 +174,13 @@
                       </ul>
                       <h4>Price after the trial</h4>
                       <div class="price">from <strong class="sum">$59,99</strong> /user/month</div>
-                      <div class="checkbox-wrap">
-                          <div class="round">
-                            <input type="checkbox" id="checkbox" />
+                      <div class="wrap-checkbox  www">
+                          <div class="checkbox-round">
+                            <input type="checkbox" class="checkbox" />
                             <label for="checkbox"></label>
                           </div>
+                          <a class="btn-select" href="#">Select this plan</a>
                       </div>
-                      <a class="btn-select" href="#">Select this plan</a>
                     </div>
                   
                   </li>
@@ -298,6 +328,8 @@
   </div>
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
