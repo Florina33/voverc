@@ -1,33 +1,25 @@
 
-let dropdownLink = $('.dropdown-link');
-
-dropdownLink.on('click', function (event) {
-    let dropdownMenu = $(this).find('.dropdown');
-    dropdownMenu.toggle();
-});
-
-
 $('.tooltip').on('click', function (event) {
     alert('fsdfasd');
 });
 
-/*
-if($(".round .checkbox").is(":checked")) {
-    alert('fsdfasd');
-    $(this).parent(".wrap-checkbox").addClass("active");
-}
-else {
-    $(this).parent(".wrap-checkbox").removeClass("active");
-}
 
-*/
+$( ".round input[type=radio]" ).on( "click", function() {
 
+    $(".round input[type=radio]").each(function(i){  
+        
+        let parent = $(this).parents(".wrap-checkbox");
+        
+        if( $(this).is(":checked") ) {
+            parent.addClass("active");
+        }
+        else {
+            parent.removeClass("active");
+        }
 
-// $( ".round input[type=checkbox]" ).on( "click", function() {
-// $( ".round input[type=radio]" ).on( "click", function() {
+    });
 
-//     let parent = $(this).parent(".round");
-//     let parentTwo = parent.parent(".wrap-checkbox");
+    return false;
 
-//     parentTwo.toggleClass("active");
-// });
+    // parent.toggleClass("active");
+});

@@ -467,7 +467,7 @@ img {
 	display: inline-block;
 }
   
-/* 
+
 .round > label {
 	position: absolute;
 	background-color: #fff;
@@ -504,9 +504,10 @@ img {
 
 .wrap-checkbox.active label::after {
 	opacity: 1;
-} */
+}
 
-/* .round > input[type="checkbox"]:checked + label::after {
+/* .round > input[type="radio"]:checked + label::after,
+.round > input[type="checkbox"]:checked + label::after {
 	opacity: 1;
 } */
 
