@@ -24,18 +24,10 @@ else {
 
 
 $( ".checkbox-round input[type=checkbox]" ).on( "click", function() {
-   //console.log( $(this));
     //onsole.log( $(this).parent(".wrap-checkbox") );
 
     let parent = $(this).parent(".checkbox-round");
     let parentTwo = parent.parent(".wrap-checkbox");
 
-    parentTwo.css( "background", "yellow" );
     parentTwo.toggleClass("active");
-
-    parentTwo.find(".btn-select").html("gdfghsfgh");
-
-    //let parent = $(this).parent(".wrap-checkbox");
-    //parent.css( "background", "yellow" );
-    //parent.addClass("active");
 });
