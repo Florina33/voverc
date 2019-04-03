@@ -363,6 +363,7 @@ img {
 	box-sizing: border-box;
 	padding: 5px;
 }
+.section-choose-plan .item-plan.active .wrap,
 .section-choose-plan .item-plan .wrap:hover {
 	background: #fff;
 }
@@ -433,11 +434,15 @@ img {
     border-radius: 5px;
 }
 
-.wrap-checkbox.active .btn-select {
+.section-choose-plan .btn-continue:hover {
+	background: #ff972d;
+}
+
+.item-plan.active .btn-select {
 	display: none;
 }
 
-.wrap-checkbox.active .btn-continue {
+.item-plan.active .btn-continue {
 	display: inline-block;
 }
 
@@ -458,7 +463,7 @@ img {
 
 /* checkbox */
 
-.wrap-checkbox {
+.wrap-radio {
 	margin: 27px auto 40px auto;
 }
 
@@ -502,7 +507,7 @@ img {
     height: 22px;
 }
 
-.wrap-checkbox.active label::after {
+.item-plan.active label::after {
 	opacity: 1;
 }
 
