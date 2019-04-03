@@ -24,11 +24,10 @@ else {
 
 
 // $( ".round input[type=checkbox]" ).on( "click", function() {
-$( ".round input[type=radio]" ).on( "click", function() {
-    //onsole.log( $(this).parent(".wrap-checkbox") );
+// $( ".round input[type=radio]" ).on( "click", function() {
 
-    let parent = $(this).parent(".round");
-    let parentTwo = parent.parent(".wrap-checkbox");
+//     let parent = $(this).parent(".round");
+//     let parentTwo = parent.parent(".wrap-checkbox");
 
-    parentTwo.toggleClass("active");
-});
+//     parentTwo.toggleClass("active");
+// });
