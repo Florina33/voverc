@@ -19,9 +19,16 @@ body {
 	height: auto;
 }
 
-.content-wrapper {
+.main-wrapper {
 	position: relative;
 	max-width: 1400px;
+	width: auto;
+	margin: auto;
+}
+
+.content-wrapper {
+	position: relative;
+	max-width: 1230px;
 	width: auto;
 	margin: auto;
 }
@@ -52,7 +59,7 @@ h3 {
 }
 
 h4 {
-	font-size: 18px;
+	font-size: 19px;
 	text-align: center;
 	font-weight: bold;
 	margin: 0 0 1.5em;
@@ -67,6 +74,11 @@ h5 {
 ul, li {
 	font-size: 15px;
 	line-height: 1.7;
+}
+
+a {
+	font-size: 14px;
+	color: #6b6b6b;
 }
 
 .sup {
@@ -119,26 +131,29 @@ ul, li {
 	float: right;
 }
 
+.header .phone {
+	font-size: 17px;
+	font-weight: bold;
+	color: #1988bf;
+}
+
 .header .btn_chat {
 	background: #ffffff;
 	border: none;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: bold;
+	color: #414141;
 }
 
-.header .phone {
-	color: #10617c;
-}
 
 /* ------------------------------------------------------------------------- */
 
 .main-menu {
 	width: 100%;
 	padding: 7px 0;
-	background-color: #171b1e;
-	background-image: url(../images/bg_main-nav.jpg);
-	background-position: 0 0;
-	background-repeat: repeat;
 	text-align: center;
-	color: #cdcdcd;
+	color: #838383;
 	font-size: 12px;
 	white-space: nowrap
 }
@@ -146,13 +161,63 @@ ul, li {
 .main-menu .menu-list {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
 
 .main-menu .menu-item {
 	display: inline-block;
-	height: 19px;
-	line-height: 19px;
+	position: relative;
+	border: 1px solid #e2e2e2;
+	border-right: none;
+	background: #fff;
+	margin: 0 21px 0 21px;
+	height: 56px;
+	line-height: 56px;
+	box-sizing: border-box;
+}
+
+.main-menu .menu-item::before {
+	content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border-top: 29px solid transparent;
+    border-left: 33px solid #f6f6f6;
+    border-bottom: 29px solid transparent;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.main-menu .menu-item::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    bottom: 6px;
+    right: -20px;
+    box-sizing: border-box;
+	background: #ffffff;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+	border-left: none;
+	z-index: 1;
+}
+
+
+.main-menu .menu-item:hover,
+.main-menu .menu-item.active,
+/* .main-menu .menu-item:hover::before,
+.main-menu .menu-item.active::before, */
+.main-menu .menu-item:hover::after,
+.main-menu .menu-item.active::after  {
+	border-color: #53949a;
+	color: #6799b2;
 }
 
 .main-menu a {
@@ -160,15 +225,13 @@ ul, li {
 	height: 100%;
 	padding: 0 18px;
 	color: inherit;
-	border-radius: 1em;
+	font-size: 15px;
 	text-decoration: none;
+	z-index: 10;
+    position: relative;
 }
 
-.main-menu a:hover,
-.main-menu .active a {
-	background-color: #98999a;
-	color: #1c2023;
-}
+
 
 /* @media (max-width: 600px) {
 	.main-menu {
@@ -189,21 +252,75 @@ ul, li {
 
 .section-choose-plan .choose-plan-list {
 	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: flex-start;
-	align-items: flex-start;
-	text-align: center;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    text-align: center;
+	/* max-width: 1230px; */
+	width: 100%;
+    margin: 100px auto 0 auto;
 }
 
 .section-choose-plan .item-plan {
-	max-width: 300px;
+	position: relative;
+	margin: 0 2px;
+	width: 25%;
+	/* max-width: 300px; */
+}
+
+.section-choose-plan .item-plan .wrap {
+	position: relative;
+    background: #f6f6f6;
 	width: 100%;
 	border: 1px solid #d2d2d2;
 	border-radius: 5px;
 	box-sizing: border-box;
-	margin: 0 2px;
 	padding: 5px;
 }
+.section-choose-plan .item-plan .wrap:hover {
+	background: #fff;
+}
+
+.section-choose-plan .item-plan.popular::before {
+    content: "Most popular";
+    position: absolute;
+    width: 100%;
+	height: 58px;
+	top: -55px;
+    left: 0;
+    background: #ff860b;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+    font-size: 16px;
+	font-weight: bold;
+	
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+/* .section-choose-plan .item-plan.popular .wrap::after {
+	content: "";
+	display: inline-block;
+    position: absolute;
+    width: 100%;
+	height: 10px;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+    background: #f6f6f6;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #d2d2d2;
+	border-bottom: none;
+}
+
+.section-choose-plan .item-plan .wrap:hover::after {
+	background: #fff;
+} */
 
 .section-choose-plan .conditions-list {
 	min-height: 300px;
@@ -217,15 +334,43 @@ ul, li {
 	margin-right: 20px;
 }
 
-.section-choose-plan .conditions-item:before {
+.section-choose-plan .conditions-item::before {
     content: "";
     position: absolute;
     width: 8px;
     height: 8px;
-    background: #d67435;
+    background: #d6793c;
     border-radius: 50%;
     top: 9px;
     left: -15px;
+}
+
+.section-choose-plan .btn-select {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+.section-choose-plan .btn-select:hover {
+	text-decoration: none;
+}
+
+.section-choose-plan .plan-naame {
+	padding: 10px 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.section-choose-plan h4 {
+	padding-top: 10px;
+	border-top: 1px solid #d6d6d6;
+}
+
+.section-choose-plan .price {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.section-choose-plan .price .sum {
+	/* font-weight: bold; */
 }
 
 @media (max-width: 1000px) {
@@ -252,7 +397,7 @@ ul, li {
 }
 
 .footer h3,
-.footer h5 {
+.footer h4 {
 	color: #fff;
 }
 
@@ -325,4 +470,53 @@ ul, li {
 
 @media (max-width: 400px) {
 
+}
+
+
+
+/*********************************************/
+
+.checkbox-wrap {
+	margin: 27px auto 17px auto;
+}
+
+.round {
+	position: relative;
+	display: inline-block;
+}
+  
+.round > label {
+	position: absolute;
+	background-color: #fff;
+	height: 28px;
+	width: 28px;
+	top: 0;
+	left: 0;
+	border: 2px solid #0685bc;
+	border-radius: 50%;
+
+	box-sizing: border-box;
+	cursor: pointer;
+
+}
+
+.round > label::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	top: 4px;
+	left: 4px;
+	background: #0685bc;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+.round > input[type="checkbox"] {
+	visibility: hidden;
+}
+
+.round > input[type="checkbox"]:checked + label::after {
+	opacity: 1;
 }
