@@ -36,6 +36,7 @@ body {
 	max-width: 1230px;
 	width: auto;
 	margin: auto;
+	padding: 0px 15px;
 }
 
 .main-content {
@@ -71,21 +72,21 @@ h3 {
 	font-size: 20px;
 	font-weight: bold;
 	font-family: inherit;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.4em;
 }
 
 h4 {
 	font-size: 19px;
 	font-weight: bold;
 	font-family: inherit;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.3em;
 }
 
 h5 {
 	font-size: 16px;
 	font-weight: 300;
 	font-family: inherit;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.2em;
 }
 
 p {
@@ -204,7 +205,7 @@ img {
 
 .main-menu .menu-list {
 	margin: 0;
-	padding: 0;
+	padding: 0 12px;
 	
 	-webkit-justify-content: center;
 	justify-content: center;
@@ -274,6 +275,7 @@ img {
 
 .main-menu .menu-item:first-child {
 	padding: 0;
+	margin: 15px 29px 15px 5px;
 }
 
 .main-menu .menu-item:first-child::before,
@@ -282,8 +284,9 @@ img {
 }
 
 .main-menu .menu-item:last-child {
-	padding-right: 15px;
+	padding-right: 20px;
 	border-right: 1px solid #e2e2e2;
+	margin: 15px 5px 15px -12px;
 }
 .main-menu .menu-item:last-child::after {
 	display: none;
@@ -317,16 +320,11 @@ img {
 }
 
 
-/* @media (max-width: 600px) {
-	.main-menu {
-		font-size: 16px;
-	}
-
+@media (max-width: 600px) {
 	.main-menu .menu-item {
-		height: 30px;
-		line-height: 30px;
+		
 	}
-} */
+}
 
 
 /* section-choose-plan
@@ -342,7 +340,6 @@ img {
     -webkit-align-items: flex-start;
     align-items: flex-start;
     text-align: center;
-	/* max-width: 1230px; */
 	width: 100%;
     margin: 100px auto 0 auto;
 }
@@ -351,7 +348,6 @@ img {
 	position: relative;
 	padding: 0 2px 85px 2px;
 	width: 25%;
-	/* max-width: 300px; */
 }
 
 .section-choose-plan .item-plan .wrap {
@@ -393,15 +389,17 @@ img {
 
 .section-choose-plan .conditions-list {
 	min-height: 300px;
-	margin-bottom: 20px;
-	text-align: left;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 290px;
+    margin: 0px auto 5px auto;
 }
 
 .section-choose-plan .conditions-item {
 	position: relative;
 	margin-bottom: 15px;
-	margin-left: 35px;
-	margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 15px;
 }
 
 .section-choose-plan .conditions-item::before {
@@ -472,7 +470,6 @@ img {
 	display: inline-block;
 }
   
-
 .round > label {
 	position: absolute;
 	background-color: #fff;
@@ -517,13 +514,13 @@ img {
 } */
 
 
-@media (max-width: 660px) {
+@media (max-width: 900px) {
 	.section-choose-plan .item-plan {
 		width: 50%;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 	.section-choose-plan .item-plan {
 		width: 100%;
 	}
@@ -615,96 +612,39 @@ img {
 	font-size: 12px;
 	color: #89a8ba;
 	background: #fff;
-	padding: 20px 0 45px 0;
+	padding: 15px 0 30px 0;
 	text-align: center;
 	border-top: 1px solid #4e4e4e;
 }
 
 .footer .legal a {
-	color: #89a8ba;
+	color: #137db9;
 }
 
-
-@media (max-width: 650px) {
-
+.footer .legal a:hover {
+	color: #2496d6;
 }
-
-
-
 
 
 /* tooltip
 ----------------------------------------------------------------------------- */
-/* 
-.tooltip {
-	display: inline-block;
-    position: relative;
-    text-align: left;
-    width: 30px;
-    height: 30px;
-}
-
-.tooltip .right {
-    min-width: 110px;
-    max-width: 470px;
-    width: 100%;
-    top: -40%;
-    left: 21px;
-    margin-left: 15px;
-    margin-right: 5px;
-    /* transform: translate(0, -60%); 
-    padding: 6px 10px;
-    background-color: #EDEDED;
-    border-radius: 2px;
-    position: absolute;
-    z-index: 99999999;
-    box-sizing: border-box;
-    border: 1px solid #d7d7d7;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.8s;
-    font-size: 14px;
-    display: inline-block;
-}
-
-.tooltip:hover .right {
-    visibility: visible;
-    opacity: 1;
-}
-
-.tooltip .right i {
-    position: absolute;
-    top: 60%;
-    right: 100%;
-    margin-top: -12px;
-    width: 12px;
-    height: 24px;
-    overflow: hidden;
-}
-
-.tooltip .right i::after {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    left: 0;
-    top: 50%;
-    transform: translate(50%,-50%) rotate(-45deg);
-    background-color: #EDEDED;
-    border: 1px solid #d7d7d7;
-} */
 
 
 /* START TOOLTIP STYLES */
 [tooltip] {
-	position: relative; /* opinion 1 */
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    top: 2px;
 }
 
 /* Applies to all tooltips */
 [tooltip]::before,
 [tooltip]::after {
-	text-transform: none; /* opinion 2 */
-	font-size: .9em; /* opinion 3 */
+	text-transform: none; 
+	font-size: .9em; 
 	font-size: 12px;
 	line-height: 1;
 	user-select: none;
@@ -715,20 +655,15 @@ img {
 }
 [tooltip]::before {
 	content: '';
-	border: 5px solid transparent; /* opinion 4 */
-	z-index: 1001; /* absurdity 1 */
+	border: 5px solid transparent; 
+	z-index: 1001;
 }
 [tooltip]::after {
-	content: attr(tooltip); /* magic! */
+	content: attr(tooltip); 
 
-	/* most of the rest of this is opinion */
 	font-family: Helvetica, sans-serif;
 	text-align: center;
 
-	/* 
-		Let the content set the size of the tooltips 
-		but this will also keep them from being obnoxious
-	*/
 	min-width: 3em;
 	max-width: 21em;
 	white-space: nowrap;
@@ -739,16 +674,14 @@ img {
 	box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
 	background: #333;
 	color: #fff;
-	z-index: 1000; /* absurdity 2 */
+	z-index: 1000; 
 }
 
-/* Make the tooltips respond to hover */
 [tooltip]:hover::before,
 [tooltip]:hover::after {
 	display: block;
 }
 
-/* don't show empty tooltips */
 [tooltip='']::before,
 [tooltip='']::after {
 	display: none !important;
