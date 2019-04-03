@@ -417,7 +417,7 @@ img {
 .section-choose-plan .btn-select {
     display: block;
     text-decoration: underline;
-	margin-top: 17px;
+	margin-top: 24px;
 }
 
 .section-choose-plan .btn-select:hover {
@@ -425,13 +425,12 @@ img {
 }
 
 .section-choose-plan .btn-continue {
-	display: none;
-	display: inline-block;
+    display: none;
     color: #fff;
     background: #ff860b;
-    padding: 10px 45px;
-    margin: 17px auto 0 auto;
-	border-radius: 5px;
+    padding: 7px 45px;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
 }
 
 .wrap-checkbox.active .btn-select {
