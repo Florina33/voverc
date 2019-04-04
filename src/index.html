@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=`, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
   <title>Document</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,15 +18,15 @@
   <div class="page-wrapper">
 
     <header class="header">
-      <div class="main-wrapper flexbox">
+      <div class="main-wrapper flex-container">
         <a href="#" class="logo">
           <img src="./images/logo_voverc.png" alt="Voverc logo" width="150" height="32" />
         </a>
 
-        <div class="info flexbox">
+        <div class="info flex-container">
           <a href="tel:778-323-8486" class="phone">778-323-8486</a>
-          <button class="btn_chat flexbox">
-            <img class="icon_chat" width="40" height="34" src="./images/icon_chat.jpg" alt="icon chat">
+          <button class="btn_chat flex-container">
+            <img width="40" height="34" src="./images/icon_chat.jpg" alt="icon chat">
             Sales chat
           </button>
         </div>
@@ -34,31 +37,31 @@
       <div class="content-wrappe">
 
         <nav class="main-menu">
-          <ul class="menu-list flexbox">
+          <ul class="menu-list flex-container">
             <li class="menu-item">
               <span></span>
-              <a href="#" class="flexbox">
+              <a href="#" class="flex-container">
                 <img width="48" height="38" src="./images/icon_choose.jpg" alt="icon choose">
                 Choose number
               </a>
             </li>
             <li class="menu-item active">
               <span></span>
-              <a href="#" class="flexbox">
+              <a href="#" class="flex-container">
                 <img width="48" height="38" src="./images/icon_list.jpg" alt="icon list">
                 Choose plan
               </a>
             </li>
             <li class="menu-item">
               <span></span>
-              <a href="#" class="flexbox">
+              <a href="#" class="flex-container">
                 <img width="48" height="38" src="./images/icon_people-around.jpg" alt="icon people around">
                 Add users
               </a>
             </li>
             <li class="menu-item">
               <span></span>
-              <a href="#" class="flexbox">
+              <a href="#" class="flex-container">
                 <img width="48" height="38" src="./images/icon_check-list.jpg" alt="icon check list">
                 Checkout
               </a>
@@ -66,7 +69,7 @@
           </ul>
         </nav>
 
-        <section class="section-choose-plan">
+        <section class="plans">
 
           <div class="content-wrapper">
             <h2>Select a plan for your&nbsp;trial
@@ -76,12 +79,12 @@
             </h2>
 
             <form>
-              <ul class="choose-plan-list flexbox wrap">
+              <ul class="choose-plan-list flex-container wrap">
 
                 <li class="item-plan">
 
                   <div class="wrap">
-                    <h3 class="plan-naame">Essentials<span class="sup">tm</span></h3>
+                    <h3 class="plan-naame">Essentials<sup>tm</sup></h3>
                     <ul class="conditions-list">
                       <li class="conditions-item">Up to 10 users</li>
                       <li class="conditions-item">Toll-free or local number</li>
@@ -98,8 +101,8 @@
                         <label for="contactChoice1"></label>
                       </div>
                       <a class="btn-select" href="#">Select this plan</a>
-                      <div>
-                        <a class="btn-continue" href="#">Continue</a>
+                      <div class="btn-continue">
+                        <a href="#">Continue</a>
                       </div>
                     </div>
                   </div>
@@ -124,8 +127,8 @@
                         <label for="contactChoice2"></label>
                       </div>
                       <a class="btn-select" href="#">Select this plan</a>
-                      <div>
-                        <a class="btn-continue" href="#">Continue</a>
+                      <div class="btn-continue">
+                        <a href="#">Continue</a>
                       </div>
                     </div>
                   </div>
@@ -151,8 +154,8 @@
                         <label for="contactChoice3"></label>
                       </div>
                       <a class="btn-select" href="#">Select this plan</a>
-                      <div>
-                        <a class="btn-continue" href="#">Continue</a>
+                      <div class="btn-continue">
+                        <a href="#">Continue</a>
                       </div>
                     </div>
                   </div>
@@ -180,8 +183,8 @@
                         <label for="contactChoice4"></label>
                       </div>
                       <a class="btn-select" href="#">Select this plan</a>
-                      <div>
-                        <a class="btn-continue" href="#">Continue</a>
+                      <div class="btn-continue">
+                        <a href="#">Continue</a>
                       </div>
                     </div>
                   </div>
@@ -197,16 +200,16 @@
 
       </div>
 
-    </main>
+    </main><!-- .content -->
 
     <footer class="footer">
       <div class="content-wrapper">
 
         <h3>A complete phone system</h3>
 
-        <div class="phone-services flexbox">
+        <div class="phone-services flex-container">
 
-          <ul class="phone-services-list">
+          <ul class="services-list">
             <li class="service-item">
               <img width="50" height="40" src="./images/icon_cloud.jpg" alt="icon cloud">
               <a href="#">Cloud PBX</a>
@@ -238,7 +241,7 @@
             </li>
           </ul>
 
-          <ul class="phone-services-list">
+          <ul class="services-list">
             <li class="service-item">
               <img width="50" height="40" src="./images/icon_microphone.jpg" alt="icon microphone">
               <a href="#">Audio conferencing</a>
@@ -277,7 +280,7 @@
             </li>
           </ul>
 
-          <ul class="phone-services-list">
+          <ul class="services-list">
             <li class="service-item">
               <img width="50" height="40" src="./images/icon_file.jpg" alt="icon file">
               <a href="#">Flexible answering rules</a>
@@ -314,17 +317,16 @@
 
         </div>
 
-        <h4>You get everything you need. It's really that convenient.</h5>
+        <div class="mark">You get everything you need. It's really that convenient.</div>
       </div>
 
       <div class="legal">
         <a href="#">Legal</a>
       </div>
 
-    </footer>
+    </footer><!-- .footer -->
 
-
-  </div>
+  </div><!-- .page-wrapper -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="./index.js"></script>

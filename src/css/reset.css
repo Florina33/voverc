@@ -1,4 +1,4 @@
-/* Eric Meyer's CSS Reset */
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -81,7 +82,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* End of Eric Meyer's CSS Reset */
 
 * {
 	-webkit-box-sizing: border-box;
@@ -95,7 +95,7 @@ table {
     overflow: hidden;
 }
 
-.flexbox {
+.flex-container {
 	display: -webkit-flex; 
 	display: flex; 
 
